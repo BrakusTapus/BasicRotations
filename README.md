@@ -1,24 +1,18 @@
-# To be used with [RotationSolver](https://github.com/Jaksuhn/RotationSolver)
-![GitHub all releases](https://img.shields.io/github/downloads/BrakusTapus/KirboRotations/total)
+# To be used with [EasyCombat](https://github.com/BrakusTapus/EasyCombat)
+![GitHub all releases](https://img.shields.io/github/downloads/BrakusTapus/BasicRotations/total)
 
-Download the latest version of KirboRotations:
+Download the latest version of BasicRotations:
 
-- [`KirboRotations.dll`](https://github.com/BrakusTapus/KirboRotations/releases/latest/download/KirboRotations.dll)
-
-```
-https://github.com/BrakusTapus/KirboRotations/releases/latest/download/KirboRotations.dll
-```
-- [`KirboRotations.pdb`](https://github.com/BrakusTapus/KirboRotations/releases/latest/download/KirboRotations.pdb)
+- [`BasicRotations.dll`](https://github.com/BrakusTapus/BasicRotations/releases/latest/download/BasicRotations.dll)
 
 ```
-https://github.com/BrakusTapus/KirboRotations/releases/latest/download/KirboRotations.pdb
+https://github.com/BrakusTapus/KirboRotations/releases/latest/download/BasicRotations.dll
 ```
+- [`BasicRotations.pdb`](https://github.com/BrakusTapus/BasicRotations/releases/latest/download/BasicRotations.pdb)
 
-<p align="center"> 
-  <a href="https://discord.gg/4fECHunam9" alt="Discord">
-    <img src="https://discordapp.com/api/guilds/1064448004498653245/embed.png?style=banner4" />
-  </a>
-</p>
+```
+https://github.com/BrakusTapus/BasicRotations/releases/latest/download/BasicRotations.pdb
+```
 
 <p align="center">
   <a href="https://discord.gg/4fECHunam9" alt="Discord">
