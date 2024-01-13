@@ -1,0 +1,88 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0-windows</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Authors>Kirbo</Authors>
+        <Version>1.0.0.0</Version>
+        <PlatformTarget>x64</PlatformTarget>
+        <Platforms>x64</Platforms>
+
+        <DalamudLibPath>$(AppData)\XIVLauncher\addon\Hooks\dev\</DalamudLibPath>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+        <NoWarn>S101;</NoWarn>
+        <DebugType>full</DebugType>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+        <NoWarn>S101;</NoWarn>
+        <DebugType>full</DebugType>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="EasyCombat.Basic" Version="1.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Reference Include="Dalamud">
+            <HintPath>$(DalamudLibPath)Dalamud.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="ImGui.NET">
+            <HintPath>$(DalamudLibPath)ImGui.NET.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="ImGuiScene">
+            <HintPath>$(DalamudLibPath)ImGuiScene.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="Lumina">
+            <HintPath>$(DalamudLibPath)Lumina.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="Lumina.Excel">
+            <HintPath>$(DalamudLibPath)Lumina.Excel.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="FFXIVClientStructs">
+            <HintPath>$(DalamudLibPath)FFXIVClientStructs.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="Newtonsoft.Json">
+            <HintPath>$(DalamudLibPath)Newtonsoft.Json.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Using Include="BasicRotations.RotationInfo">
+          <Static>True</Static>
+        </Using>
+        <Using Include="Dalamud.Game.ClientState.JobGauge.Enums" />
+        <Using Include="Dalamud.Game.ClientState.Objects.Types" />
+        <Using Include="Dalamud.Interface" />
+        <Using Include="EasyCombat.Basic.Rotations.Basic" />
+        <Using Include="ImGuiNET" />
+        <Using Include="Newtonsoft.Json" />
+        <Using Include="EasyCombat.Basic" />
+        <Using Include="EasyCombat.Basic.Actions" />
+        <Using Include="EasyCombat.Basic.Attributes" />
+        <Using Include="EasyCombat.Basic.Configuration.RotationConfig" />
+        <Using Include="EasyCombat.Basic.Data" />
+        <Using Include="EasyCombat.Basic.Helpers" />
+        <Using Include="EasyCombat.Basic.Rotations" />
+        <Using Include="System.Numerics" />
+        <Using Include="System.Reflection" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Healer\" />
+      <Folder Include="Magical\" />
+      <Folder Include="Ranged\" />
+      <Folder Include="Melee\" />
+      <Folder Include="Tank\" />
+    </ItemGroup>
+
+</Project>

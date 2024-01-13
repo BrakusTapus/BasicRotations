@@ -1,0 +1,59 @@
+﻿// Set the 'act' variable to 'DataCenter.CommandNextAction'
+
+// Set 'BaseAction.SkipDisable' to 'true'
+// Check if 'act' is an 'IBaseAction' and meets certain conditions
+// Set 'BaseAction.SkipDisable' back to 'false'
+
+// Check if 'act' is an 'IBaseItem' and meets certain conditions
+
+// Check conditions related to configuration and player's total cast time
+
+// Call the 'EmergencyAbility' method
+
+// Call the 'InterruptAbility' method
+
+// Call the 'PvP_Purify.CanUse' method
+
+// Call the 'ShirkOrShield' method
+
+// Check conditions related to anti-knockback and call 'AntiKnockback' method
+
+// Check conditions related to 'DataCenter.IsEsunaStanceNorth' and 'role'
+
+// Call 'TrueNorth.CanUse' method
+
+// Call 'GeneralHealAbility' method
+
+// Check conditions related to 'DataCenter.IsSpeed' and call 'SpeedAbility' method
+
+// Call 'AutoDefense' method
+
+// Call 'MovingAbility' method
+
+// Call 'GeneralUsingAbility' method
+
+// Check conditions related to 'DataCenter.HPNotFull' and 'InCombat'
+
+// Check conditions related to 'DataCenter.IsHealSingle' and 'CanHealSingleAbility'
+
+// Call 'UseHealPotion' method
+
+// Check conditions related to 'HasHostilesInRange' and call 'AttackAbility' method
+
+// Call 'GeneralAbility' method
+
+// Check conditions related to movement and 'Service.Config.GetValue'
+//if (IsMoving && NotInCombatDelay && Service.Config.GetValue(PluginConfigBool.AutoSpeedOutOfCombat) && SpeedAbility(out act))
+
+// If none of the above conditions are met, return 'false'
+
+
+To-Do:
+
+Restructure all rotations so they are all similiar to each other.
+
+Roles remaining
+Healer
+Magical
+Melee
+Ranged
