@@ -22,7 +22,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="EasyCombat.Basic" Version="1.0.0.17" />
+        <PackageReference Include="EasyCombat.Basic" Version="1.0.0.24" />
     </ItemGroup>
 
     <ItemGroup>
