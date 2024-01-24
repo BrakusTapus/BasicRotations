@@ -1,6 +1,4 @@
-﻿using Lumina.Excel.GeneratedSheets;
-
-namespace BasicRotations;
+﻿namespace BasicRotations;
 
 internal class RotationInfo
 { 
