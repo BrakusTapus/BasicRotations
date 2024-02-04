@@ -21,10 +21,12 @@
         <DebugType>full</DebugType>
     </PropertyGroup>
 
+    <!-- Add package reference to EasyCombat.Basic -->
     <ItemGroup>
         <PackageReference Include="EasyCombat.Basic" Version="1.0.0.31" />
     </ItemGroup>
 
+    <!-- Dalamud required items -->
     <ItemGroup>
         <Reference Include="Dalamud">
             <HintPath>$(DalamudLibPath)Dalamud.dll</HintPath>
