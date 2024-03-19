@@ -131,7 +131,7 @@ public sealed class SCH_Default : SCH_Base
         foreach (var item in PartyMembers)
         {
             if (item.GetHealthRatio() < 0.9) continue;
-            if (item.HasStatus(true, StatusID.Aetherpact))
+           // if (item.HasStatus(true, StatusID.Aetherpact))
             {
                 act = Aetherpact;
                 return true;
@@ -200,10 +200,10 @@ public sealed class SCH_Default : SCH_Base
     protected override bool HealSingleAbility(out IAction act)
     {
         //判断是否有人有线
-        var haveLink = PartyMembers.Any(p => p.HasStatus(true, StatusID.Aetherpact));
+        //var haveLink = PartyMembers.Any(p => p.HasStatus(true, StatusID.Aetherpact));
 
         //以太契约
-        if (Aetherpact.CanUse(out act) && FairyGauge >= 70 && !haveLink) return true;
+       // if (Aetherpact.CanUse(out act) && FairyGauge >= 70 && !haveLink) return true;
 
         //生命回生法
         if (Protraction.CanUse(out act)) return true;
@@ -218,7 +218,7 @@ public sealed class SCH_Default : SCH_Base
         if (Lustrate.CanUse(out act)) return true;
 
         //以太契约
-        if (Aetherpact.CanUse(out act) && !haveLink) return true;
+        //if (Aetherpact.CanUse(out act) && !haveLink) return true;
 
         return base.HealSingleAbility(out act);
     }

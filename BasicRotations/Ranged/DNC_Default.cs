@@ -90,7 +90,7 @@ public sealed class DNC_Default : DNC_Base
 
     protected override bool GeneralGCD(out IAction act)
     {
-        if (!InCombat && !Player.HasStatus(true, StatusID.ClosedPosition1) && ClosedPosition.CanUse(out act)) return true;
+        if (!InCombat && !Player.HasStatus(true, StatusID.ClosedPosition) && ClosedPosition.CanUse(out act)) return true;
 
         if (DanceFinishGCD(out act)) return true;
         if (ExecuteStepGCD(out act)) return true;
@@ -146,7 +146,7 @@ public sealed class DNC_Default : DNC_Base
     {
         if (!ClosedPosition.CanUse(out act)) return false;
 
-        if (InCombat && Player.HasStatus(true, StatusID.ClosedPosition1))
+        if (InCombat && Player.HasStatus(true, StatusID.ClosedPosition))
         {
             foreach (var friend in PartyMembers)
             {

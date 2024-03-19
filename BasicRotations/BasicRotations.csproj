@@ -23,7 +23,7 @@
 
     <!-- Add package reference to EasyCombat.Basic -->
     <ItemGroup>
-        <PackageReference Include="EasyCombat.Basic" Version="1.0.0.31" />
+        <PackageReference Include="EasyCombat.Basic" Version="1.0.0.46" />
     </ItemGroup>
 
     <!-- Dalamud required items -->
